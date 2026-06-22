@@ -1,82 +1,76 @@
 "use client";
 
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronDown } from 'lucide-react';
+import content from '@/content.json';
 import BlurText from '@/components/reactbits/BlurText';
 import Aurora from '@/components/reactbits/Aurora';
-import SocialIcon from '@/components/reactbits/SocialIcon';
-import content from '@/content.json';
+import SocialIcon from '@/components/SocialIcon';
+import { ChevronDown } from 'lucide-react';
 
-export default function Hero() {
+const Hero: React.FC = () => {
   const whatsappContact = content.contact.items.find(item => item.platform === 'whatsapp');
-  const primaryColor = content.colors.primary;
-  const secondaryColor = content.colors.secondary;
+  const ctaPrimaryHref = whatsappContact ? whatsappContact.value : '#contacto';
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
-      {/* Background Image */}
+    <section id="hero" className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
       <Image
-        src={content.hero.backgroundImage.src}
-        alt={content.hero.backgroundImage.alt}
+        src={content.hero.backgroundImage}
+        alt={content.hero.altText}
         fill
         priority
         className="object-cover"
-        sizes="100vw"
       />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-secondary/80 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-secondary/80" aria-hidden="true"></div>
 
-      {/* Aurora Background (subtle layer) */}
       <Aurora
-        colorStops={[primaryColor, secondaryColor, primaryColor]}
-        className="absolute inset-0 opacity-40 z-20"
-        blend="lighten"
-        amplitude={0.1}
+        colorStops={['#07cedc', '#0c4c8a', '#d83a3a']}
+        blend={0.6}
+        amplitude={0.7}
+        className="opacity-40"
       />
 
-      {/* Content */}
-      <div className="relative z-30 flex flex-col items-center text-center px-4 py-24 sm:py-32 max-w-5xl mx-auto">
-        <span className="inline-block bg-accent text-white text-sm font-semibold px-4 py-2 rounded-full mb-6 animate-fade-in delay-200">
+      <div className="relative z-10 flex flex-col items-center text-center px-4 py-24 max-w-5xl mx-auto">
+        <span className="inline-flex items-center rounded-full bg-accent/20 px-4 py-1 text-xs sm:text-sm font-semibold text-accent ring-1 ring-inset ring-accent/20 mb-6 animate-fade-in-up">
           {content.hero.eyebrow}
         </span>
 
         <BlurText
           text={content.hero.headline}
-          className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white mb-6 max-w-4xl text-balance"
+          className="font-poppins text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] text-white text-balance max-w-4xl mb-6"
           delay={0.3}
-          animateBy="words"
         />
 
-        <p className="text-lg sm:text-xl text-white/90 mb-10 max-w-2xl animate-fade-in delay-700">
+        <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-10 animate-fade-in-up animation-delay-500">
           {content.hero.subhead}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 animate-fade-in delay-900">
-          {whatsappContact && (
-            <SocialIcon
-              platform={whatsappContact.platform as any}
-              value={whatsappContact.value}
-              className="bg-accent text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-lg hover:bg-accent/90 transform hover:-translate-y-1 transition-all duration-300"
-            >
-              {content.hero.ctaPrimary}
-            </SocialIcon>
-          )}
-          <Link
-            href="#invierte"
-            className="bg-white/20 text-white px-8 py-3 rounded-lg font-semibold text-lg border border-white/30 hover:bg-white/30 transform hover:-translate-y-1 transition-all duration-300"
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up animation-delay-700">
+          <SocialIcon
+            platform="whatsapp"
+            value={ctaPrimaryHref}
+            className="bg-accent hover:bg-accent/90 text-white px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200 shadow-lg"
           >
-            Descubre más
+            {content.hero.ctaPrimary}
+          </SocialIcon>
+          <Link
+            href="#proyectos"
+            className="text-white border border-white/50 hover:border-white hover:bg-white/10 px-8 py-3 rounded-lg text-lg font-semibold transition-colors duration-200"
+          >
+            {content.hero.ctaSecondary}
           </Link>
         </div>
+      </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 animate-bounce delay-1000">
-          <span className="text-sm mb-2">{content.hero.scrollIndicator}</span>
-          <ChevronDown size={24} />
-        </div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+        <Link href="#proyectos" aria-label="Desplazarse hacia abajo">
+          <ChevronDown className="h-8 w-8 text-white" />
+        </Link>
       </div>
     </section>
   );
-}
+};
+
+export default Hero;
