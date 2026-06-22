@@ -1,27 +1,31 @@
-import React from 'react';
 import Link from 'next/link';
+import SocialIcon from '@/components/reactbits/SocialIcon';
 import content from '@/content.json';
-import SocialIcon from '@/components/SocialIcon';
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
-    <footer className="bg-secondary text-white py-16 md:py-20">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="col-span-full md:col-span-1">
-          <Link href="#" className="text-3xl font-bold text-primary font-poppins mb-4 block">
-            {content.nav.logoName}
+    <footer className="bg-secondary text-white py-16 sm:py-24">
+      <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
+        {/* Brand Info */}
+        <div className="col-span-full lg:col-span-1 text-center md:text-left">
+          <Link href="/" className="text-3xl font-bold font-poppins text-white mb-4 block">
+            {content.footer.logo}
           </Link>
-          <p className="text-white/80 leading-relaxed">
+          <p className="text-white/80 leading-relaxed max-w-xs mx-auto md:mx-0">
             {content.footer.tagline}
           </p>
         </div>
 
-        <div className="md:col-span-1">
-          <h3 className="text-xl font-semibold font-poppins mb-6">Navegación</h3>
+        {/* Navigation */}
+        <div className="col-span-1 text-center md:text-left">
+          <h3 className="text-xl font-semibold font-poppins mb-6 text-primary">Navegación</h3>
           <ul className="space-y-3">
             {content.footer.nav.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href} className="text-white/80 hover:text-primary transition-colors duration-200">
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  className="text-white/80 hover:text-accent transition-colors text-lg"
+                >
                   {link.label}
                 </Link>
               </li>
@@ -29,28 +33,45 @@ const Footer: React.FC = () => {
           </ul>
         </div>
 
-        <div className="md:col-span-2">
-          <h3 className="text-xl font-semibold font-poppins mb-6">Contacto</h3>
-          <div className="flex flex-wrap gap-6 mb-8">
-            {content.footer.social.map((social, index) => (
+        {/* Contact Info */}
+        <div className="col-span-1 text-center md:text-left">
+          <h3 className="text-xl font-semibold font-poppins mb-6 text-primary">Contacto</h3>
+          <ul className="space-y-3">
+            {content.contact.items.map((item) => (
+              <li key={item.platform}>
+                <SocialIcon
+                  platform={item.platform}
+                  value={item.value}
+                  className="text-white/80 hover:text-accent transition-colors text-lg inline-flex items-center gap-2"
+                >
+                  {item.label}
+                </SocialIcon>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Social Media */}
+        <div className="col-span-1 text-center md:text-left">
+          <h3 className="text-xl font-semibold font-poppins mb-6 text-primary">Síguenos</h3>
+          <div className="flex justify-center md:justify-start gap-4">
+            {content.contact.socials.map((social) => (
               <SocialIcon
-                key={index}
+                key={social.platform}
                 platform={social.platform}
                 value={social.value}
-                className="text-white/80 hover:text-primary transition-colors duration-200"
+                className="text-white/80 hover:text-accent transition-colors"
+                size={28}
               />
             ))}
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 mt-12 pt-8 border-t border-white/20 text-center">
-        <p className="text-white/60 text-sm">
-          {content.footer.copyright}
-        </p>
+      {/* Copyright */}
+      <div className="mt-16 pt-8 border-t border-white/10 text-center text-white/60 text-sm">
+        <p>{content.footer.copyright}</p>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
