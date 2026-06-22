@@ -1,75 +1,102 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import SocialIcon from '@/components/SocialIcon';
+import content from '@/content.json';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const navLinks = [
-    { name: 'Inicio', href: '/' },
-    { name: 'Proyectos', href: '#proyectos' },
-    { name: 'Nosotros', href: '#nosotros' },
-    { name: 'Contacto', href: '#contacto' },
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const whatsappContact = content.contact.contactMethods.find(c => c.platform === 'whatsapp');
+  const ctaDestination = whatsappContact ? {
+    platform: whatsappContact.platform,
+    value: whatsappContact.value,
+    label: content.nav.cta
+  } : { platform: 'email', value: content.contact.contactMethods.find(c => c.platform === 'email')?.value || '', label: content.nav.cta };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/50 backdrop-blur-md transition-all duration-300">
-      <div className="container mx-auto px-4 md:px-8 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-primary font-poppins">
-          Crediinmuebles
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-sm shadow-lg' : 'bg-transparent'}`}
+      aria-label="Main navigation"
+    >
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href="/" className={`text-2xl font-bold font-poppins ${isScrolled ? 'text-foreground' : 'text-white'}`} aria-label={content.nav.logoText}>
+          {content.nav.logoText}
         </Link>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              className="text-foreground/80 hover:text-primary transition-colors font-semibold"
+          <ul className={`flex space-x-6 ${isScrolled ? 'text-foreground' : 'text-white'}`}>
+            {content.nav.links.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  className="hover:text-accent transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {ctaDestination.value && (
+            <SocialIcon
+              platform={ctaDestination.platform as any}
+              value={ctaDestination.value}
+              className="bg-accent text-white px-6 py-2 rounded-xl hover:bg-accent/90 transition-colors duration-200 font-semibold"
             >
-              {link.name}
-            </Link>
-          ))}
-          <Link
-            href="#cta"
-            className="px-6 py-3 bg-primary text-white rounded-[10px] hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold"
-          >
-            Cotiza tu lote
-          </Link>
+              {ctaDestination.label}
+            </SocialIcon>
+          )}
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-foreground focus:outline-none">
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`text-2xl ${isScrolled ? 'text-foreground' : 'text-white'}`}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+          >
+            {isOpen ? <X /> : <Menu />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-lg pb-4">
-          <div className="flex flex-col items-center space-y-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="text-foreground/90 hover:text-primary transition-colors font-semibold text-lg py-2"
-              >
-                {link.name}
-              </Link>
+        <div className="md:hidden bg-background/95 backdrop-blur-sm py-4">
+          <ul className="flex flex-col items-center space-y-4 text-foreground">
+            {content.nav.links.map((link) => (
+              <li key={link.label}>
+                <Link
+                  href={link.href}
+                  className="text-lg hover:text-accent transition-colors duration-200"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              </li>
             ))}
-            <Link
-              href="#cta"
-              onClick={() => setIsOpen(false)}
-              className="w-fit px-8 py-4 bg-primary text-white rounded-[10px] hover:bg-primary/90 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg mt-4"
-            >
-              Cotiza tu lote
-            </Link>
-          </div>
+            {ctaDestination.value && (
+              <li>
+                <SocialIcon
+                  platform={ctaDestination.platform as any}
+                  value={ctaDestination.value}
+                  className="bg-accent text-white px-6 py-2 rounded-xl hover:bg-accent/90 transition-colors duration-200 font-semibold"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {ctaDestination.label}
+                </SocialIcon>
+              </li>
+            )}
+          </ul>
         </div>
       )}
     </nav>
