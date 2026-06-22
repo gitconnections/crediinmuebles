@@ -82,5 +82,28 @@
     "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/04-1dwj1vo.webp",
     "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/05-m2bc7y.webp",
     "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/06-1dwsjq3.png"
+  ],
+  "category": "Inmobiliaria",
+  "contacts": [
+    {
+      "platform": "facebook",
+      "value": "https://facebook.com/crediinmuebles"
+    },
+    {
+      "platform": "whatsapp",
+      "value": "59161682600"
+    },
+    {
+      "platform": "email",
+      "value": "hola@crediinmuebles.com"
+    },
+    {
+      "platform": "phone",
+      "value": "59161682600"
+    },
+    {
+      "platform": "website",
+      "value": "crediinmuebles.com"
+    }
   ]
 }
