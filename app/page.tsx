@@ -1,25 +1,31 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import FeaturesSection from '@/components/FeaturesSection';
-import StatsSection from '@/components/StatsSection';
-import ProblemSolutionSection from '@/components/ProblemSolutionSection';
-import ShowcaseSection from '@/components/ShowcaseSection';
-import CtaSection from '@/components/CtaSection';
+import Investment from '@/components/Investment';
+import Stats from '@/components/Stats';
+import Challenges from '@/components/Challenges';
+import Solution from '@/components/Solution';
+import Projects from '@/components/Projects';
+import Showcase from '@/components/Showcase';
+import ContactSection from '@/components/ContactSection';
+import FinalCta from '@/components/FinalCta';
 import Footer from '@/components/Footer';
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <>
       <Navbar />
       <main>
         <Hero />
-        <FeaturesSection />
-        <StatsSection />
-        <ProblemSolutionSection />
-        <ShowcaseSection />
-        <CtaSection />
+        <Investment />
+        <Stats />
+        <Challenges />
+        <Solution />
+        <Projects />
+        <Showcase />
+        <ContactSection />
+        <FinalCta />
       </main>
       <Footer />
-    </div>
+    </>
   );
-}
+};
