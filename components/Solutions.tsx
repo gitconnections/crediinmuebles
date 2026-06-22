@@ -2,13 +2,13 @@
 
 import { Reveal } from '@/components/reactbits/Reveal';
 
-interface FeatureCardProps {
+interface SolutionCardProps {
   icon: React.ReactNode;
   title: string;
   description: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => (
+const SolutionCard: React.FC<SolutionCardProps> = ({ icon, title, description }) => (
   <div className="bg-white p-8 rounded-[10px] shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
     <div className="text-[#07cedc] mb-4 text-5xl flex justify-center items-center w-16 h-16 rounded-full bg-[#07cedc]/10 mx-auto">
       {icon}
@@ -18,25 +18,27 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
   </div>
 );
 
-export function Features() {
+export function Solutions() {
   return (
-    <section id="features" className="py-24 md:py-32 bg-[#ffffff]">
+    <section className="py-24 md:py-32 bg-gray-50">
       <div className="container mx-auto px-4 text-center">
         <Reveal delay={0.1}>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins mb-6 text-[#000000] leading-tight">
-            Nuestros proyectos: seguridad, confiabilidad y respaldo
+            Nuestra solución para tus necesidades inmobiliarias
           </h2>
         </Reveal>
         <Reveal delay={0.2}>
           <p className="text-xl text-gray-700 mb-16 max-w-3xl mx-auto">
-            Nuestros proyectos están diseñados para satisfacer tus necesidades y superar tus expectativas. Cada uno de
-            nuestros proyectos cuenta con las siguientes características:
+            En Crediinmuebles, ofrecemos una solución integral para tus necesidades inmobiliarias. Nuestros proyectos
+            cuentan con revisión documental minuciosa, equipo multidisciplinario y planes de pago personalizados y
+            flexibles. Estamos comprometidos con la calidad y la seguridad de nuestros proyectos, y nos esforzamos por
+            brindarte una experiencia de compra satisfactoria y sin sorpresas.
           </p>
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Reveal delay={0.3}>
-            <FeatureCard
+            <SolutionCard
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -54,11 +56,11 @@ export function Features() {
                 </svg>
               }
               title="Revisión documental minuciosa"
-              description="Garantiza la seguridad y confiabilidad de tu inversión."
+              description="Nos aseguramos de que cada documento esté en orden para tu tranquilidad."
             />
           </Reveal>
           <Reveal delay={0.4}>
-            <FeatureCard
+            <SolutionCard
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,11 +78,11 @@ export function Features() {
                 </svg>
               }
               title="Equipo multidisciplinario"
-              description="Asegura la ejecución y entrega de proyectos de alta calidad."
+              description="Expertos en cada área para garantizar la excelencia de tu proyecto."
             />
           </Reveal>
           <Reveal delay={0.5}>
-            <FeatureCard
+            <SolutionCard
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,29 +100,7 @@ export function Features() {
                 </svg>
               }
               title="Planes de pago personalizados y flexibles"
-              description="Se adapta a tus necesidades y presupuesto."
-            />
-          </Reveal>
-          <Reveal delay={0.6}>
-            <FeatureCard
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-8 h-8"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12.75L11.25 15 15 9.75M21 12c0 1.01-0.22 1.98-0.61 2.85L17.25 21H6.75L3.61 14.85A10.023 10.023 0 013 12c0-5.523 4.477-10 10-10s10 4.477 10 10z"
-                  />
-                </svg>
-              }
-              title="Garantía de satisfacción y respaldo"
-              description="Brinda tranquilidad y confianza en tu inversión."
+              description="Adaptamos las opciones de pago a tu situación financiera."
             />
           </Reveal>
         </div>

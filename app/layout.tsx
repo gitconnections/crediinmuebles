@@ -1,29 +1,28 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Poppins, Inter } from 'next/font/google';
-
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'],
-  variable: '--font-poppins',
-  display: 'swap',
-});
+import { Inter, Poppins } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 });
+const poppins = Poppins({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Crediinmuebles - Con un lote siempre ganas',
-  description: 'Compre un lote o terreno con seguridad y confiabilidad. Expertos en proyectos inmobiliarios.',
+  description: 'Inmoviliaria Crediinmuebles: Compre un lote o terreno con seguridad y confiabilidad.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${poppins.variable} ${inter.variable}`}>
-      <body className={`font-inter antialiased text-[#0f172a] bg-[#ffffff]`}>{children}</body>
+    <html lang="es" className={`${inter.variable} ${poppins.variable}`}>
+      <body className="font-inter antialiased text-[#000000] bg-[#ffffff]">{children}</body>
     </html>
   );
 }

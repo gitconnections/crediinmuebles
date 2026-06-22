@@ -1,9 +1,15 @@
-export default function Footer() {
+import Link from 'next/link';
+
+export function Footer() {
   return (
-    <footer className="bg-[#0f172a] text-white py-12">
+    <footer className="bg-[#000000] py-12 text-white rounded-b-[10px] -mt-4 relative z-40">
       <div className="container mx-auto px-4 text-center">
-        <p className="text-lg font-poppins font-semibold mb-2">Crediinmuebles</p>
-        <p className="text-sm text-gray-400">&copy; {new Date().getFullYear()} Todos los derechos reservados.</p>
+        <Link href="/" className="text-3xl font-bold font-poppins mb-4 inline-block">
+          Crediinmuebles
+        </Link>
+        <p className="text-gray-400 text-lg">
+          © {new Date().getFullYear()} Crediinmuebles. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   );
