@@ -1,24 +1,86 @@
 {
-  "title": "Tu landing",
+  "title": "Borrador",
   "design": {
-    "primary": "#6366f1",
-    "secondary": "#4f46e5",
-    "accent": "#ec4899",
+    "primary": "#07cedc",
+    "secondary": "#0c4c8a",
+    "accent": "#d83a3a",
     "background": "#ffffff",
-    "foreground": "#0f172a",
-    "headingFont": "Inter",
+    "foreground": "#000000",
+    "headingFont": "Poppins",
     "bodyFont": "Inter",
-    "radius": "12px"
+    "radius": "10px"
   },
   "hero": {
-    "eyebrow": "Novedad",
-    "headline": "Tu título principal aquí",
-    "subhead": "Una frase de apoyo que explica tu propuesta con claridad y convence en segundos.",
-    "ctaLabel": "Empezar ahora"
+    "eyebrow": "Inmobiliaria",
+    "headline": "Con un lote siempre ganas",
+    "subhead": "Compre un lote o terreno con seguridad y confiabilidad",
+    "ctaLabel": "Cotiza tu lote"
   },
   "sections": [
-    { "title": "Beneficio uno", "body": "Describe el valor principal para tu cliente.", "bullets": [] },
-    { "title": "Beneficio dos", "body": "Otra razón para elegirte.", "bullets": [] }
+    {
+      "title": "Invierte con confianza en terrenos y proyectos inmobiliarios",
+      "body": "En Crediinmuebles, nos comprometemos con la calidad y la seguridad de nuestros proyectos. Nuestros proyectos son diseñados para satisfacer tus necesidades y superar tus expectativas. Con un lote siempre ganas: seguridad, confiabilidad y respaldo.",
+      "bullets": []
+    },
+    {
+      "title": "Nuestra experiencia y presencia en el mercado",
+      "body": "Más de 4 años de experiencia en el mercado inmobiliario, facilitando el acceso a la compra de terrenos y proyectos inmobiliarios. Más de 15.427 contactos mensuales a nivel nacional, demostrando nuestra presencia y alcance en el mercado. Más de 1.746 metros cuadrados de infraestructura construida, reflejando nuestra capacidad para ejecutar proyectos de alta calidad.",
+      "bullets": [
+        "Más de 4 años de experiencia en el mercado inmobiliario",
+        "Más de 15.427 contactos mensuales a nivel nacional",
+        "Más de 1.746 metros cuadrados de infraestructura construida"
+      ]
+    },
+    {
+      "title": "¿Qué te preocupa al invertir en un proyecto inmobiliario?",
+      "body": "La dificultad para encontrar proyectos seguros y confiables, el miedo a la falta de transparencia en la documentación y al incumplimiento de los plazos de entrega, y la preocupación por la calidad de la construcción y el valor a largo plazo de la inversión. Estos son algunos de los desafíos que enfrentas al invertir en un proyecto inmobiliario.",
+      "bullets": [
+        "Dificultad para encontrar proyectos seguros y confiables",
+        "Miedo a la falta de transparencia en la documentación y al incumplimiento de los plazos de entrega",
+        "Preocupación por la calidad de la construcción y el valor a largo plazo de la inversión"
+      ]
+    },
+    {
+      "title": "Nuestra solución para tus necesidades inmobiliarias",
+      "body": "En Crediinmuebles, ofrecemos una solución integral para tus necesidades inmobiliarias. Nuestros proyectos cuentan con revisión documental minuciosa, equipo multidisciplinario y planes de pago personalizados y flexibles. Estamos comprometidos con la calidad y la seguridad de nuestros proyectos, y nos esforzamos por brindarte una experiencia de compra satisfactoria y sin sorpresas.",
+      "bullets": [
+        "Revisión documental minuciosa",
+        "Equipo multidisciplinario",
+        "Planes de pago personalizados y flexibles"
+      ]
+    },
+    {
+      "title": "Nuestros proyectos: seguridad, confiabilidad y respaldo",
+      "body": "Nuestros proyectos están diseñados para satisfacer tus necesidades y superar tus expectativas. Cada uno de nuestros proyectos cuenta con las siguientes características:",
+      "bullets": [
+        "Revisión documental minuciosa: Garantiza la seguridad y confiabilidad de tu inversión",
+        "Equipo multidisciplinario: Asegura la ejecución y entrega de proyectos de alta calidad",
+        "Planes de pago personalizados y flexibles: Se adapta a tus necesidades y presupuesto",
+        "Garantía de satisfacción y respaldo: Brinda tranquilidad y confianza en tu inversión"
+      ]
+    },
+    {
+      "title": "¿Qué dicen nuestros clientes sobre nosotros?",
+      "body": "",
+      "bullets": []
+    },
+    {
+      "title": "Preguntas frecuentes",
+      "body": "",
+      "bullets": []
+    },
+    {
+      "title": "¿Estás listo para invertir con confianza?",
+      "body": "En Crediinmuebles, nos comprometemos con la calidad y la seguridad de nuestros proyectos. ¡Contáctanos hoy mismo para obtener más información y cotizar tu lote!",
+      "bullets": []
+    }
   ],
-  "images": []
+  "images": [
+    "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/01-x7nfwr.png",
+    "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/02-x23b7m.webp",
+    "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/03-1skdjic.webp",
+    "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/04-1dwj1vo.webp",
+    "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/05-m2bc7y.webp",
+    "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/06-1dwsjq3.png"
+  ]
 }
