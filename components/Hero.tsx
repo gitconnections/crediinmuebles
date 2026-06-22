@@ -1,72 +1,65 @@
-"use client";
+'use client';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { ChevronDown } from 'lucide-react';
 import BlurText from '@/components/reactbits/BlurText';
 import Aurora from '@/components/reactbits/Aurora';
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
+      {/* Background Image */}
       <Image
-        src="https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/01-x7nfwr.png"
-        alt="Terreno con paisaje montañoso y cielo azul"
+        src="https://images.unsplash.com/photo-1696537970979-40a1eb9901c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHwxfHxJbm1vYmlsaWFyaWElMjB0ZXJyZW5vcyUyMEludmllcnRlJTIwY29uJTIwY29uZmlhbnphJTIwZW4lMjB0ZXJyZW5vcyUyMHklMjBwcm95ZWN0b3MlMjBpbm1vYmlsaWFyaW9zfGVufDF8MHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+        alt="Vista aérea de una ciudad con muchos edificios y áreas verdes, simbolizando inversión inmobiliaria."
         fill
         priority
-        className="object-cover object-center -z-10"
+        className="object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/60 via-secondary/70 to-accent/60 -z-10"></div>
+
+      {/* Overlay Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-secondary/80 z-10"></div>
+
+      {/* Aurora Background (Subtle) */}
       <Aurora
         colorStops={['#07cedc', '#0c4c8a', '#d83a3a']}
         blend="multiply"
-        amplitude={0.5}
-        className="absolute inset-0 -z-20 opacity-30"
+        amplitude={0.1}
+        className="absolute inset-0 opacity-40 z-20"
       />
 
-      <div className="relative z-10 text-white p-6 max-w-4xl mx-auto">
-        <span className="inline-block bg-white/20 text-white text-sm font-semibold px-4 py-2 rounded-full mb-4 backdrop-blur-sm">
+      {/* Content */}
+      <div className="relative z-30 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-white">
+        <span className="inline-block bg-accent text-white text-sm font-semibold px-4 py-2 rounded-full mb-4 shadow-md">
           Inmobiliaria
         </span>
-        <h1 className="text-6xl md:text-7xl font-bold font-poppins tracking-tight mb-6 leading-tight">
-          <BlurText text="Con un lote siempre ganas" animateBy="words" delay={0.2} className="text-white" />
+        <h1 className="text-6xl md:text-7xl font-extrabold tracking-tight mb-6 font-poppins leading-tight">
+          <BlurText text="Con un lote siempre ganas" delay={0.2} animateBy="words" className="text-white" />
         </h1>
-        <p className="text-xl md:text-2xl mb-8 font-inter max-w-2xl mx-auto opacity-90">
-          Compre un lote o terreno con seguridad y confiabilidad
+        <p className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90 leading-relaxed">
+          Compre un lote o terreno con seguridad y confiabilidad, asegurando su futuro con inversiones sólidas.
         </p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <Link
-            href="#cta-final"
-            className="px-10 py-4 bg-accent text-white font-semibold text-lg rounded-lg shadow-xl hover:bg-accent/90 transition-all duration-300 transform hover:-translate-y-1"
+            href="#cta"
+            className="px-10 py-4 bg-accent text-white rounded-[10px] text-lg font-semibold shadow-xl hover:bg-accent/90 transform hover:-translate-y-1 transition-all duration-300"
           >
             Cotiza tu lote
           </Link>
           <Link
             href="#features"
-            className="px-10 py-4 bg-white/20 text-white font-semibold text-lg rounded-lg border border-white/30 backdrop-blur-sm hover:bg-white/30 transition-all duration-300 transform hover:-translate-y-1"
+            className="px-10 py-4 border border-white text-white rounded-[10px] text-lg font-semibold hover:bg-white/20 transition-all duration-300"
           >
-            Explora nuestros proyectos
+            Conoce más
           </Link>
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <svg
-          className="w-8 h-8 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M19 14l-7 7m0 0l-7-7m7 7V3"
-          ></path>
-        </svg>
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 animate-bounce">
+        <ChevronDown size={36} className="text-white opacity-75" />
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

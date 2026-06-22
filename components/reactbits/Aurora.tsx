@@ -51,10 +51,16 @@ interface AuroraProps {
   amplitude?: number;
   blend?: number;
   speed?: number;
+  className?: string;
 }
 
 export default function Aurora(props: AuroraProps) {
-  const { colorStops = ['#5227FF', '#7cff67', '#5227FF'], amplitude = 1.0, blend = 0.5 } = props;
+  const {
+    colorStops = ['#5227FF', '#7cff67', '#5227FF'],
+    amplitude = 1.0,
+    blend = 0.5,
+    className = '',
+  } = props;
   const propsRef = useRef<AuroraProps>(props);
   propsRef.current = props;
   const ctnDom = useRef<HTMLDivElement>(null);
@@ -120,7 +126,7 @@ export default function Aurora(props: AuroraProps) {
     };
   }, [amplitude]);
 
-  return <div ref={ctnDom} className="w-full h-full" />;
+  return <div ref={ctnDom} className={`w-full h-full ${className}`} />;
 }
 
 export { Aurora };

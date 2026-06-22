@@ -1,14 +1,11 @@
-import React from 'react';
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-background py-16 border-t border-foreground/10">
-      <div className="container mx-auto px-4 text-center text-foreground/70">
-        <p className="text-lg font-poppins font-semibold mb-2">Crediinmuebles</p>
-        <p className="text-sm">&copy; {new Date().getFullYear()} Todos los derechos reservados.</p>
+    <footer className="bg-background border-t border-gray-100 py-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
+        <p className="text-foreground/70 text-sm">
+          &copy; {new Date().getFullYear()} Crediinmuebles. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
