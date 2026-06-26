@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import BlurText from '@/components/reactbits/BlurText';
 import Aurora from '@/components/reactbits/Aurora';
@@ -11,6 +12,17 @@ import content from '@/content.json';
 export default function Hero() {
   const whatsappContact = content.contact.items.find(item => item.platform === 'whatsapp');
   const ctaHref = whatsappContact ? whatsappContact.value : '#contacto';
+
+  // Flatter aurora waves on mobile; fuller on larger screens.
+  const [auroraAmplitude, setAuroraAmplitude] = useState(0.2);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(min-width: 768px)');
+    const apply = () => setAuroraAmplitude(mq.matches ? 0.2 : 0.06);
+    apply();
+    mq.addEventListener('change', apply);
+    return () => mq.removeEventListener('change', apply);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center text-white overflow-hidden">
@@ -25,9 +37,9 @@ export default function Hero() {
 
       {/* Aurora Effect */}
       <Aurora
-        colorStops={['#07cedc', '#0c4c8a', '#d83a3a']}
+        colorStops={['#07cedc', '#0c4c8a', '#b45309']}
         blend="lighten"
-        amplitude={0.2}
+        amplitude={auroraAmplitude}
         className="absolute inset-0 opacity-40"
       />
 
@@ -49,7 +61,7 @@ export default function Hero() {
           {content.hero.subhead}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 mb-16 animate-fade-in-up animation-delay-700">
+        <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up animation-delay-700">
           {whatsappContact ? (
             <SocialIcon
               platform={whatsappContact.platform}
@@ -67,16 +79,19 @@ export default function Hero() {
             </Link>
           )}
         </div>
-
-        <Link
-          href="#invertir"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 hover:text-white transition-colors animate-bounce"
-          aria-label={content.hero.scrollIndicator}
-        >
-          <span className="text-sm mb-1">{content.hero.scrollIndicator}</span>
-          <ArrowDown size={24} />
-        </Link>
       </div>
+
+      {/* Scroll indicator — pinned to the viewport bottom, legible over the photo */}
+      <Link
+        href="#invertir"
+        className="group absolute bottom-[max(1.25rem,env(safe-area-inset-bottom))] left-1/2 z-20 -translate-x-1/2 flex flex-col items-center gap-1 text-white [text-shadow:0_1px_4px_rgb(0_0_0/0.6)] transition-colors hover:text-accent"
+        aria-label={content.hero.scrollIndicator}
+      >
+        <span className="text-sm font-medium">{content.hero.scrollIndicator}</span>
+        <span className="flex size-9 items-center justify-center rounded-full bg-black/30 ring-1 ring-white/40 backdrop-blur-sm animate-bounce drop-shadow">
+          <ArrowDown size={20} aria-hidden="true" />
+        </span>
+      </Link>
     </section>
   );
 }
