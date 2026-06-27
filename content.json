@@ -212,13 +212,13 @@
         "name": "Oscar Cortez",
         "role": "Full-Stack Developer",
         "image": "/credits/oscar.webp",
-        "href": "https://faztdeploy.com/contacto"
+        "href": "https://faztdeploy.com/contacto?contacto-cliente=Daniela&empresa=Crediinmuebles"
       },
       {
         "name": "FaztDeploy",
         "role": "Diseño & desarrollo web",
         "logo": "/credits/faztdeploy-logo.svg",
-        "href": "https://faztdeploy.com/landing-free"
+        "href": "https://faztdeploy.com/landing-free?contacto-cliente=Daniela&empresa=Crediinmuebles"
       }
     ],
     "disclaimer": "Este sitio es una demostración no oficial, creada como propuesta para que Crediinmuebles evalúe y autorice su uso.",
