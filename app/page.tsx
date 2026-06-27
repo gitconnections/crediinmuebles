@@ -8,6 +8,7 @@ import ProjectsSection from '@/components/ProjectsSection';
 import ShowcaseSection from '@/components/ShowcaseSection';
 import ContactSection from '@/components/ContactSection';
 import FinalCta from '@/components/FinalCta';
+import CreditsSection from '@/components/CreditsSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <ContactSection />
         <FinalCta />
       </main>
+      <CreditsSection />
       <Footer />
     </div>
   );

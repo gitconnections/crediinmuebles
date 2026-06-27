@@ -8,8 +8,9 @@ export default function Footer() {
       <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
         {/* Brand Info */}
         <div className="col-span-full lg:col-span-1 text-center md:text-left">
-          <Link href="/" className="text-3xl font-bold font-poppins text-white mb-4 block">
-            {content.footer.logo}
+          <Link href="/" className="text-3xl font-bold font-poppins uppercase tracking-wide mb-4 block" aria-label={content.footer.logo}>
+            <span className="text-gray-100">Credi</span>
+            <span className="text-primary">Inmuebles</span>
           </Link>
           <p className="text-white/80 leading-relaxed max-w-xs mx-auto md:mx-0">
             {content.footer.tagline}

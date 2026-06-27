@@ -2,10 +2,22 @@
   "nav": {
     "logo": "Crediinmuebles",
     "links": [
-      { "label": "Invertir", "href": "#invertir" },
-      { "label": "Experiencia", "href": "#experiencia" },
-      { "label": "Proyectos", "href": "#proyectos" },
-      { "label": "Galería", "href": "#galeria" }
+      {
+        "label": "Invertir",
+        "href": "#invertir"
+      },
+      {
+        "label": "Experiencia",
+        "href": "#experiencia"
+      },
+      {
+        "label": "Proyectos",
+        "href": "#proyectos"
+      },
+      {
+        "label": "Galería",
+        "href": "#galeria"
+      }
     ],
     "cta": "Cotiza tu lote"
   },
@@ -25,27 +37,54 @@
     "id": "experiencia",
     "title": "Nuestra experiencia y presencia en el mercado",
     "items": [
-      { "value": 4, "label": "Más de 4 años de experiencia en el mercado inmobiliario, facilitando el acceso a la compra de terrenos y proyectos inmobiliarios." },
-      { "value": 15427, "label": "Más de 15.427 contactos mensuales a nivel nacional, demostrando nuestra presencia y alcance en el mercado." },
-      { "value": 1746, "label": "Más de 1.746 metros cuadrados de infraestructura construida, reflejando nuestra capacidad para ejecutar proyectos de alta calidad." }
+      {
+        "value": 4,
+        "label": "Más de 4 años de experiencia en el mercado inmobiliario, facilitando el acceso a la compra de terrenos y proyectos inmobiliarios."
+      },
+      {
+        "value": 15427,
+        "label": "Más de 15.427 contactos mensuales a nivel nacional, demostrando nuestra presencia y alcance en el mercado."
+      },
+      {
+        "value": 1746,
+        "label": "Más de 1.746 metros cuadrados de infraestructura construida, reflejando nuestra capacidad para ejecutar proyectos de alta calidad."
+      }
     ]
   },
   "concerns": {
     "title": "¿Qué te preocupa al invertir en un proyecto inmobiliario?",
     "description": "La dificultad para encontrar proyectos seguros y confiables, el miedo a la falta de transparencia en la documentación y al incumplimiento de los plazos de entrega, y la preocupación por la calidad de la construcción y el valor a largo plazo de la inversión. Estos son algunos de los desafíos que enfrentas al invertir en un proyecto inmobiliario.",
     "items": [
-      { "title": "Proyectos seguros y confiables", "description": "Dificultad para encontrar proyectos seguros y confiables." },
-      { "title": "Transparencia y plazos", "description": "Miedo a la falta de transparencia en la documentación y al incumplimiento de los plazos de entrega." },
-      { "title": "Calidad y valor a largo plazo", "description": "Preocupación por la calidad de la construcción y el valor a largo plazo de la inversión." }
+      {
+        "title": "Proyectos seguros y confiables",
+        "description": "Dificultad para encontrar proyectos seguros y confiables."
+      },
+      {
+        "title": "Transparencia y plazos",
+        "description": "Miedo a la falta de transparencia en la documentación y al incumplimiento de los plazos de entrega."
+      },
+      {
+        "title": "Calidad y valor a largo plazo",
+        "description": "Preocupación por la calidad de la construcción y el valor a largo plazo de la inversión."
+      }
     ]
   },
   "solution": {
     "title": "Nuestra solución para tus necesidades inmobiliarias",
     "description": "En Crediinmuebles, ofrecemos una solución integral para tus necesidades inmobiliarias. Nuestros proyectos cuentan con revisión documental minuciosa, equipo multidisciplinario y planes de pago personalizados y flexibles. Estamos comprometidos con la calidad y la seguridad de nuestros proyectos, y nos esforzamos por brindarte una experiencia de compra satisfactoria y sin sorpresas.",
     "items": [
-      { "title": "Revisión documental minuciosa", "description": "Garantía de seguridad y confiabilidad." },
-      { "title": "Equipo multidisciplinario", "description": "Asegura la ejecución de proyectos de alta calidad." },
-      { "title": "Planes de pago personalizados", "description": "Se adapta a tus necesidades y presupuesto." }
+      {
+        "title": "Revisión documental minuciosa",
+        "description": "Garantía de seguridad y confiabilidad."
+      },
+      {
+        "title": "Equipo multidisciplinario",
+        "description": "Asegura la ejecución de proyectos de alta calidad."
+      },
+      {
+        "title": "Planes de pago personalizados",
+        "description": "Se adapta a tus necesidades y presupuesto."
+      }
     ]
   },
   "projects": {
@@ -53,22 +92,52 @@
     "title": "Nuestros proyectos: seguridad, confiabilidad y respaldo",
     "description": "Nuestros proyectos están diseñados para satisfacer tus necesidades y superar tus expectativas. Cada uno de nuestros proyectos cuenta con las siguientes características:",
     "items": [
-      { "title": "Revisión documental minuciosa", "description": "Garantiza la seguridad y confiabilidad de tu inversión." },
-      { "title": "Equipo multidisciplinario", "description": "Asegura la ejecución y entrega de proyectos de alta calidad." },
-      { "title": "Planes de pago personalizados y flexibles", "description": "Se adapta a tus necesidades y presupuesto." },
-      { "title": "Garantía de satisfacción y respaldo", "description": "Brinda tranquilidad y confianza en tu inversión." }
+      {
+        "title": "Revisión documental minuciosa",
+        "description": "Garantiza la seguridad y confiabilidad de tu inversión."
+      },
+      {
+        "title": "Equipo multidisciplinario",
+        "description": "Asegura la ejecución y entrega de proyectos de alta calidad."
+      },
+      {
+        "title": "Planes de pago personalizados y flexibles",
+        "description": "Se adapta a tus necesidades y presupuesto."
+      },
+      {
+        "title": "Garantía de satisfacción y respaldo",
+        "description": "Brinda tranquilidad y confianza en tu inversión."
+      }
     ]
   },
   "showcase": {
     "id": "galeria",
     "title": "Proyectos destacados",
     "images": [
-      { "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/01-x7nfwr.png", "alt": "Vista aérea de un proyecto inmobiliario" },
-      { "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/02-x23b7m.webp", "alt": "Diseño arquitectónico moderno" },
-      { "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/03-1skdjic.webp", "alt": "Terreno con infraestructura" },
-      { "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/04-1dwj1vo.webp", "alt": "Plano de desarrollo urbano" },
-      { "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/05-m2bc7y.webp", "alt": "Maqueta de un complejo residencial" },
-      { "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/06-1dwsjq3.png", "alt": "Construcción de una vivienda" }
+      {
+        "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/01-x7nfwr.png",
+        "alt": "Vista aérea de un proyecto inmobiliario"
+      },
+      {
+        "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/02-x23b7m.webp",
+        "alt": "Diseño arquitectónico moderno"
+      },
+      {
+        "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/03-1skdjic.webp",
+        "alt": "Terreno con infraestructura"
+      },
+      {
+        "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/04-1dwj1vo.webp",
+        "alt": "Plano de desarrollo urbano"
+      },
+      {
+        "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/05-m2bc7y.webp",
+        "alt": "Maqueta de un complejo residencial"
+      },
+      {
+        "src": "https://cdn.faztdeploy.com/faztdeploy/landing/bdf59287-14f1-436b-a65d-09a941293a03/images/06-1dwsjq3.png",
+        "alt": "Construcción de una vivienda"
+      }
     ]
   },
   "finalCta": {
@@ -80,26 +149,32 @@
     "title": "Hablemos y cotiza tu lote",
     "description": "En Crediinmuebles, nos comprometemos con la calidad y la seguridad de nuestros proyectos. ¡Contáctanos hoy mismo para obtener más información y cotizar tu lote!",
     "items": [
-      { "platform": "whatsapp", "value": "+591 70011223", "label": "Chatea por WhatsApp" },
-      { "platform": "email", "value": "hola@crediinmuebles.com", "label": "Envíanos un Email" },
-      { "platform": "phone", "value": "+591 70011223", "label": "Llámanos" }
+      {
+        "platform": "whatsapp",
+        "value": "+591 70011223",
+        "label": "Chatea por WhatsApp"
+      },
+      {
+        "platform": "email",
+        "value": "hola@crediinmuebles.com",
+        "label": "Envíanos un Email"
+      },
+      {
+        "platform": "phone",
+        "value": "+591 70011223",
+        "label": "Llámanos"
+      }
     ],
     "socials": [
-      { "platform": "instagram", "value": "https://instagram.com/crediinmuebles" },
-      { "platform": "facebook", "value": "https://facebook.com/crediinmuebles" }
+      {
+        "platform": "instagram",
+        "value": "https://instagram.com/crediinmuebles"
+      },
+      {
+        "platform": "facebook",
+        "value": "https://facebook.com/crediinmuebles"
+      }
     ]
-  },
-  "footer": {
-    "logo": "Crediinmuebles",
-    "tagline": "Tu inversión segura en bienes raíces.",
-    "nav": [
-      { "label": "Invertir", "href": "#invertir" },
-      { "label": "Experiencia", "href": "#experiencia" },
-      { "label": "Proyectos", "href": "#proyectos" },
-      { "label": "Galería", "href": "#galeria" },
-      { "label": "Contacto", "href": "#contacto" }
-    ],
-    "copyright": "© 2024 Crediinmuebles. Todos los derechos reservados."
   },
   "images": {
     "heroBackground": {
@@ -107,11 +182,77 @@
       "alt": "Vista aérea de una ciudad con edificios y áreas verdes"
     },
     "sectionBackgrounds": [
-      { "src": "https://images.unsplash.com/photo-1550480808-de32e58c7ddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHwyfHxJbm1vYmlsaWFyaWElMjB0ZXJyZW5vcyUyMEludmllcnRlJTIwY29uJTIwY29uZmlhbnphJTIwZW4lMjBwcm95ZWN0b3MlMjBpbm1vYmlsaXJpYW9zfGVufDF8MHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", "alt": "Perspectiva forzada de edificios modernos" },
-      { "src": "https://images.unsplash.com/photo-1585060179500-8b4a620e15f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHwzfHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", "alt": "Campo verde con árboles" },
-      { "src": "https://images.unsplash.com/photo-1754757993963-163a9678624c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHw0fHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", "alt": "Pequeño pueblo al pie de una montaña" },
-      { "src": "https://images.unsplash.com/photo-1643153571467-74e7cfe1b54c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHw1fHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", "alt": "Vista aérea de un edificio en construcción" },
-      { "src": "https://images.unsplash.com/photo-1564501049279-679e8c5e425d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHw2fHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080", "alt": "Fotografía aérea de una puerta" }
+      {
+        "src": "https://images.unsplash.com/photo-1550480808-de32e58c7ddf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHwyfHxJbm1vYmlsaWFyaWElMjB0ZXJyZW5vcyUyMEludmllcnRlJTIwY29uJTIwY29uZmlhbnphJTIwZW4lMjBwcm95ZWN0b3MlMjBpbm1vYmlsaXJpYW9zfGVufDF8MHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "alt": "Perspectiva forzada de edificios modernos"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1585060179500-8b4a620e15f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHwzfHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "alt": "Campo verde con árboles"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1754757993963-163a9678624c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHw0fHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "alt": "Pequeño pueblo al pie de una montaña"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1643153571467-74e7cfe1b54c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHw1fHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "alt": "Vista aérea de un edificio en construcción"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1564501049279-679e8c5e425d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5ODMwNDJ8MHwxfHNlYXJjaHw2fHxJbm9iaWxpYXJpYSUyMHRlcnJlbm9zJTIwSW52aWVydGUlMjBjb24lMjBjb25maWFuemElMjBlbiUyMHRlcnJlbm9zJTIweSUyMHByb3llY3RvcyUyMGlubW9iaWxpYXJpb3N8ZW5mMXwwfHx8fDE3ODIxMzkxMzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+        "alt": "Fotografía aérea de una puerta"
+      }
     ]
+  },
+  "credits": {
+    "eyebrow": "Hecho con dedicación",
+    "title": "Este sitio fue desarrollado por",
+    "people": [
+      {
+        "name": "Oscar Cortez",
+        "role": "Full-Stack Developer",
+        "image": "/credits/oscar.webp",
+        "href": "https://faztdeploy.com"
+      },
+      {
+        "name": "FaztDeploy",
+        "role": "Diseño & desarrollo web",
+        "logo": "/credits/faztdeploy-logo.svg",
+        "href": "https://faztdeploy.com"
+      }
+    ],
+    "disclaimer": "Este sitio es una demostración no oficial, creada como propuesta para que Crediinmuebles evalúe y autorice su uso.",
+    "audit": {
+      "label": "Auditamos tu sitio web actual — mira el informe técnico",
+      "cta": "Ver auditoría",
+      "href": "/official-page"
+    }
+  },
+  "footer": {
+    "logo": "Crediinmuebles",
+    "tagline": "Tu inversión segura en bienes raíces.",
+    "nav": [
+      {
+        "label": "Invertir",
+        "href": "#invertir"
+      },
+      {
+        "label": "Experiencia",
+        "href": "#experiencia"
+      },
+      {
+        "label": "Proyectos",
+        "href": "#proyectos"
+      },
+      {
+        "label": "Galería",
+        "href": "#galeria"
+      },
+      {
+        "label": "Contacto",
+        "href": "#contacto"
+      }
+    ],
+    "copyright": "© 2024 Crediinmuebles. Todos los derechos reservados."
   }
 }
