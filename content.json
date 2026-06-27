@@ -212,13 +212,13 @@
         "name": "Oscar Cortez",
         "role": "Full-Stack Developer",
         "image": "/credits/oscar.webp",
-        "href": "https://faztdeploy.com"
+        "href": "/contacto"
       },
       {
         "name": "FaztDeploy",
         "role": "Diseño & desarrollo web",
         "logo": "/credits/faztdeploy-logo.svg",
-        "href": "https://faztdeploy.com"
+        "href": "/landing-free"
       }
     ],
     "disclaimer": "Este sitio es una demostración no oficial, creada como propuesta para que Crediinmuebles evalúe y autorice su uso.",
