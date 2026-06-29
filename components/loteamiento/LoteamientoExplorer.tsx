@@ -52,6 +52,9 @@ export default function LoteamientoExplorer() {
     | { key: string; mode: 'rotate'; cx: number; cy: number; ang0: number; t0: Edit }
     | null
   >(null);
+  // active touch/mouse pointers (viewBox coords) for pinch-to-zoom
+  const pointers = useRef<Map<number, { x: number; y: number }>>(new Map());
+  const pinch = useRef<{ dist0: number; k0: number; wx: number; wy: number } | null>(null);
 
   useEffect(() => {
     try {
@@ -143,13 +146,30 @@ export default function LoteamientoExplorer() {
     grab.current = { key, mode: 'rotate', cx: ecx, cy: ecy, ang0: Math.atan2(w.y - ecy, w.x - ecx), t0: getT(key) };
   };
 
+  const startPinch = () => {
+    const [a, b] = [...pointers.current.values()];
+    const dist0 = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+    const mx = (a.x + b.x) / 2;
+    const my = (a.y + b.y) / 2;
+    pinch.current = { dist0, k0: view.k, wx: (mx - view.x) / view.k, wy: (my - view.y) / view.k };
+  };
+
   const onPointerDown = (e: React.PointerEvent) => {
     // NOTE: do NOT setPointerCapture here — it would steal the pointer from the
-    // lot polygons and suppress their click (selection would stop working).
+    // lot polygons (suppressing click/selection) and break multi-touch pinch.
     const m = toVB(e.clientX, e.clientY);
-    pan.current = { mx: m.x, my: m.y, vx: view.x, vy: view.y };
+    pointers.current.set(e.pointerId, m);
+    if (grab.current) return; // area editing in progress
+    if (pointers.current.size >= 2) {
+      pan.current = null;
+      startPinch();
+    } else {
+      pan.current = { mx: m.x, my: m.y, vx: view.x, vy: view.y };
+    }
   };
   const onPointerMove = (e: React.PointerEvent) => {
+    if (pointers.current.has(e.pointerId)) pointers.current.set(e.pointerId, toVB(e.clientX, e.clientY));
+
     const g = grab.current;
     if (g) {
       const w = toWorld(e.clientX, e.clientY);
@@ -161,17 +181,37 @@ export default function LoteamientoExplorer() {
       }
       return;
     }
+
+    // pinch-to-zoom (two pointers): scale by finger spread, pan by midpoint
+    if (pinch.current && pointers.current.size >= 2) {
+      const [a, b] = [...pointers.current.values()];
+      const dist = Math.hypot(b.x - a.x, b.y - a.y) || 1;
+      const mx = (a.x + b.x) / 2;
+      const my = (a.y + b.y) / 2;
+      const k = clamp((pinch.current.k0 * dist) / pinch.current.dist0, 1, 9);
+      setView({ k, x: mx - pinch.current.wx * k, y: my - pinch.current.wy * k });
+      return;
+    }
+
     if (!pan.current) return;
     const m = toVB(e.clientX, e.clientY);
     const p = pan.current;
     setView((v) => ({ ...v, x: p.vx + (m.x - p.mx), y: p.vy + (m.y - p.my) }));
   };
-  const onPointerUp = () => {
+  const endPointer = (e: React.PointerEvent) => {
+    pointers.current.delete(e.pointerId);
     if (grab.current) {
       grab.current = null;
       persist(edits);
     }
-    pan.current = null;
+    if (pointers.current.size < 2) pinch.current = null;
+    if (pointers.current.size === 1) {
+      // a finger lifted from a pinch → resume single-finger pan smoothly
+      const [m] = [...pointers.current.values()];
+      pan.current = { mx: m.x, my: m.y, vx: view.x, vy: view.y };
+    } else if (pointers.current.size === 0) {
+      pan.current = null;
+    }
   };
 
   const zoomBy = (f: number) =>
@@ -230,8 +270,9 @@ export default function LoteamientoExplorer() {
         onWheel={onWheel}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
-        onPointerUp={onPointerUp}
-        onPointerLeave={onPointerUp}
+        onPointerUp={endPointer}
+        onPointerCancel={endPointer}
+        onPointerLeave={endPointer}
       >
         <rect x={0} y={0} width={VBW} height={VBH} fill="#f8fafc" onClick={() => setSelectedId(null)} />
         <g transform={`translate(${view.x} ${view.y}) scale(${view.k})`}>
