@@ -9,6 +9,7 @@ import ShowcaseSection from '@/components/ShowcaseSection';
 import ContactSection from '@/components/ContactSection';
 import FinalCta from '@/components/FinalCta';
 import CreditsSection from '@/components/CreditsSection';
+import LoteamientoSection from '@/components/LoteamientoSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <FinalCta />
       </main>
       <CreditsSection />
+      <LoteamientoSection />
       <Footer />
     </div>
   );

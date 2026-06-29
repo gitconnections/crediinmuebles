@@ -1,0 +1,1542 @@
+{
+ "meta": {
+  "source": "porfa plotear.dwg22.dwg (demo)",
+  "unit": "m",
+  "lots": 83,
+  "manzanas": 10,
+  "note": "Lotes reconstruidos del DWG real; áreas comunes y status son demo."
+ },
+ "viewBox": "0 0 859.1 531.3",
+ "entrada": [
+  96.76764458550343,
+  474.4612990038561
+ ],
+ "entradaAngleDeg": -28.6,
+ "streets": [
+  {
+   "type": "calle",
+   "points": "32.0,481.4 35.0,476.2 25.1,470.4 22.1,475.6"
+  },
+  {
+   "type": "calle",
+   "points": "20.0,464.2 65.9,489.8 105.3,507.0"
+  },
+  {
+   "type": "calle",
+   "points": "85.6,421.8 102.6,448.2"
+  },
+  {
+   "type": "calle",
+   "points": "92.0,353.1 81.0,388.3"
+  },
+  {
+   "type": "calle",
+   "points": "101.6,356.2 91.8,390.9"
+  },
+  {
+   "type": "calle",
+   "points": "91.8,390.9 91.5,392.0 91.2,393.1 91.0,394.3 90.9,395.5 90.8,396.6 90.9,397.8 91.0,399.0 91.2,400.1 91.5,401.3 91.9,402.4 92.3,403.5 92.8,404.6 93.4,405.6 94.0,406.6"
+  },
+  {
+   "type": "calle",
+   "points": "79.4,490.1 104.8,499.6"
+  },
+  {
+   "type": "calle",
+   "points": "114.1,338.9 171.9,295.1"
+  },
+  {
+   "type": "calle",
+   "points": "178.3,296.8 199.2,320.5"
+  },
+  {
+   "type": "calle",
+   "points": "108.1,331.0 189.9,268.9"
+  },
+  {
+   "type": "calle",
+   "points": "327.1,252.5 275.8,299.1"
+  },
+  {
+   "type": "calle",
+   "points": "251.3,321.4 233.2,337.3"
+  },
+  {
+   "type": "calle",
+   "points": "194.4,371.5 180.7,383.5"
+  },
+  {
+   "type": "calle",
+   "points": "169.2,393.6 101.4,417.9"
+  },
+  {
+   "type": "calle",
+   "points": "180.8,383.3 169.2,393.6"
+  },
+  {
+   "type": "calle",
+   "points": "219.6,343.6 199.2,320.5"
+  },
+  {
+   "type": "calle",
+   "points": "187.4,390.8 175.8,401.1"
+  },
+  {
+   "type": "calle",
+   "points": "175.8,401.1 108.4,425.9"
+  },
+  {
+   "type": "calle",
+   "points": "201.0,379.0 187.2,391.0"
+  },
+  {
+   "type": "calle",
+   "points": "237.4,346.8 201.0,379.0"
+  },
+  {
+   "type": "calle",
+   "points": "257.9,328.9 237.4,346.9"
+  },
+  {
+   "type": "calle",
+   "points": "326.8,267.7 352.6,301.2"
+  },
+  {
+   "type": "calle",
+   "points": "147.9,451.9 99.2,473.5"
+  },
+  {
+   "type": "calle",
+   "points": "112.5,445.1 113.1,445.8 113.8,446.4 114.5,447.0 115.2,447.6 116.0,448.1 116.8,448.5 117.6,449.0 118.4,449.3 119.2,449.7 120.1,449.9 121.0,450.2 121.9,450.3 122.8,450.4 123.7,450.5"
+  },
+  {
+   "type": "calle",
+   "points": "106.3,433.8 112.5,445.1"
+  },
+  {
+   "type": "calle",
+   "points": "94.0,406.6 94.4,407.5 94.8,408.4 95.2,409.3 95.6,410.1 96.1,411.0 96.6,411.8 97.1,412.6 97.6,413.5 98.2,414.2 98.8,415.0 99.4,415.8 100.1,416.5 100.7,417.2 101.4,417.9"
+  },
+  {
+   "type": "calle",
+   "points": "108.4,425.9 107.8,426.3 107.3,426.7 106.9,427.1 106.4,427.6 106.1,428.2 105.8,428.8 105.6,429.4 105.5,430.1 105.4,430.7 105.5,431.4 105.6,432.0 105.7,432.7 106.0,433.3 106.3,433.8"
+  },
+  {
+   "type": "calle",
+   "points": "325.2,267.7 258.0,328.8"
+  },
+  {
+   "type": "calle",
+   "points": "186.5,284.0 206.8,268.7"
+  },
+  {
+   "type": "calle",
+   "points": "185.6,289.9 206.7,313.9"
+  },
+  {
+   "type": "calle",
+   "points": "226.8,336.7 206.7,313.9"
+  },
+  {
+   "type": "calle",
+   "points": "219.1,349.7 194.4,371.5"
+  },
+  {
+   "type": "calle",
+   "points": "275.8,299.1 251.3,321.4"
+  },
+  {
+   "type": "calle",
+   "points": "196.1,276.8 189.9,268.9"
+  },
+  {
+   "type": "calle",
+   "points": "401.9,331.1 396.5,320.7"
+  },
+  {
+   "type": "calle",
+   "points": "327.6,252.2 335.1,258.7"
+  },
+  {
+   "type": "calle",
+   "points": "80.9,388.3 80.4,390.7 80.0,393.2 79.8,395.6 79.7,398.1 79.7,400.6 79.8,403.0 80.1,405.5 80.5,407.9 81.1,410.3 81.7,412.7 82.5,415.0 83.4,417.3 84.5,419.6 85.6,421.8"
+  },
+  {
+   "type": "calle",
+   "points": "346.0,366.9 354.8,361.2"
+  },
+  {
+   "type": "calle",
+   "points": "99.2,473.5 77.1,486.3"
+  },
+  {
+   "type": "calle",
+   "points": "384.5,329.2 396.5,320.7"
+  },
+  {
+   "type": "calle",
+   "points": "374.6,333.0 352.6,301.2"
+  }
+ ],
+ "commonAreas": [
+  {
+   "name": "Mercado",
+   "type": "mercado",
+   "shape": "rect",
+   "points": "162.8,435.6 191.6,421.9 182.3,401.9 153.4,415.6",
+   "cx": 172.5,
+   "cy": 418.8,
+   "angleDeg": -25.4,
+   "w": 32,
+   "h": 22
+  },
+  {
+   "name": "Cancha polideportiva",
+   "type": "cancha",
+   "shape": "rect",
+   "points": "114.1,365.2 147.7,336.9 131.0,317.0 97.3,345.3",
+   "cx": 122.5,
+   "cy": 341.1,
+   "angleDeg": -40.1,
+   "w": 44,
+   "h": 26
+  },
+  {
+   "name": "Plaza central",
+   "type": "plaza",
+   "shape": "circle",
+   "points": "228.2,403.2 227.7,399.2 226.4,395.4 224.3,392.0 221.4,389.1 218.0,387.0 214.2,385.7 210.2,385.2 206.2,385.7 202.4,387.0 199.0,389.1 196.1,392.0 194.0,395.4 192.7,399.2 192.2,403.2 192.7,407.2 194.0,411.0 196.1,414.4 199.0,417.3 202.4,419.4 206.2,420.8 210.2,421.2 214.2,420.8 218.0,419.4 221.4,417.3 224.3,414.4 226.4,411.0 227.7,407.2",
+   "cx": 210.2,
+   "cy": 403.2,
+   "angleDeg": 0,
+   "r": 18
+  },
+  {
+   "name": "Área verde / Parque",
+   "type": "parque",
+   "shape": "rect",
+   "points": "294.5,435.4 337.1,409.2 320.4,381.9 277.8,408.2",
+   "cx": 307.4,
+   "cy": 408.6,
+   "angleDeg": -31.6,
+   "w": 50,
+   "h": 32
+  }
+ ],
+ "lots": [
+  {
+   "id": "A-01",
+   "manzana": "A",
+   "numero": 1,
+   "areaM2": 311,
+   "status": "disponible",
+   "inclinacionPct": 5.8,
+   "precioUSD": 9330,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "238.5,383.3 250.8,410.5 240.5,414.9 229.7,388.3",
+   "cx": 240,
+   "cy": 399.5
+  },
+  {
+   "id": "A-02",
+   "manzana": "A",
+   "numero": 2,
+   "areaM2": 318,
+   "status": "disponible",
+   "inclinacionPct": 6.7,
+   "precioUSD": 9540,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "247.3,378.4 260.7,405.8 250.8,410.5 238.5,383.3",
+   "cx": 249.4,
+   "cy": 394.7
+  },
+  {
+   "id": "A-03",
+   "manzana": "A",
+   "numero": 3,
+   "areaM2": 322,
+   "status": "vendido",
+   "inclinacionPct": 2,
+   "precioUSD": 9660,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "256.1,373.4 270.4,400.9 260.7,405.8 247.3,378.4",
+   "cx": 258.7,
+   "cy": 389.8
+  },
+  {
+   "id": "A-04",
+   "manzana": "A",
+   "numero": 4,
+   "areaM2": 331,
+   "status": "vendido",
+   "inclinacionPct": 0.9,
+   "precioUSD": 9930,
+   "ventajas": [
+    "Frente a área verde",
+    "Terreno plano"
+   ],
+   "points": "264.2,367.3 279.9,395.8 270.4,400.9 256.1,373.4",
+   "cx": 267.8,
+   "cy": 384.5
+  },
+  {
+   "id": "A-05",
+   "manzana": "A",
+   "numero": 5,
+   "areaM2": 340,
+   "status": "disponible",
+   "inclinacionPct": 8,
+   "precioUSD": 10200,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "272.7,361.8 289.2,390.5 279.9,395.8 264.2,367.3",
+   "cx": 276.6,
+   "cy": 379
+  },
+  {
+   "id": "A-06",
+   "manzana": "A",
+   "numero": 6,
+   "areaM2": 370,
+   "status": "disponible",
+   "inclinacionPct": 5.3,
+   "precioUSD": 11100,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "280.9,356.3 299.8,384.3 289.2,390.5 272.7,361.8",
+   "cx": 286,
+   "cy": 373.8
+  },
+  {
+   "id": "A-07",
+   "manzana": "A",
+   "numero": 7,
+   "areaM2": 357,
+   "status": "disponible",
+   "inclinacionPct": 0.3,
+   "precioUSD": 10710,
+   "ventajas": [
+    "Frente a área verde",
+    "Terreno plano"
+   ],
+   "points": "289.1,350.6 309.1,378.6 299.8,384.3 280.9,356.3",
+   "cx": 294.9,
+   "cy": 367.6
+  },
+  {
+   "id": "B-01",
+   "manzana": "B",
+   "numero": 1,
+   "areaM2": 354,
+   "status": "reservado",
+   "inclinacionPct": 2.1,
+   "precioUSD": 10620,
+   "ventajas": [
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "79.5,402.6 50.0,423.3 55.4,431.7 82.2,413.7",
+   "cx": 66.9,
+   "cy": 417.6
+  },
+  {
+   "id": "B-02",
+   "manzana": "B",
+   "numero": 2,
+   "areaM2": 316,
+   "status": "disponible",
+   "inclinacionPct": 0.2,
+   "precioUSD": 9480,
+   "ventajas": [
+    "Cerca del mercado",
+    "Cerca de la entrada",
+    "Terreno plano"
+   ],
+   "points": "82.2,413.7 55.4,431.7 60.7,440.2 86.4,422.9",
+   "cx": 71.2,
+   "cy": 427.1
+  },
+  {
+   "id": "B-03",
+   "manzana": "B",
+   "numero": 3,
+   "areaM2": 309,
+   "status": "vendido",
+   "inclinacionPct": 6.4,
+   "precioUSD": 9270,
+   "ventajas": [
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "86.4,422.9 60.7,440.2 66.1,448.6 91.8,431.4",
+   "cx": 76.3,
+   "cy": 435.8
+  },
+  {
+   "id": "B-04",
+   "manzana": "B",
+   "numero": 4,
+   "areaM2": 309,
+   "status": "disponible",
+   "inclinacionPct": 4.9,
+   "precioUSD": 9270,
+   "ventajas": [
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "91.8,431.4 66.1,448.6 71.5,457.0 97.2,439.8",
+   "cx": 81.7,
+   "cy": 444.2
+  },
+  {
+   "id": "C-01",
+   "manzana": "C",
+   "numero": 1,
+   "areaM2": 253,
+   "status": "disponible",
+   "inclinacionPct": 4,
+   "precioUSD": 7590,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "84.0,378.8 60.5,370.3 56.7,379.5 80.9,388.3",
+   "cx": 70.5,
+   "cy": 379.3
+  },
+  {
+   "id": "C-02",
+   "manzana": "C",
+   "numero": 2,
+   "areaM2": 249,
+   "status": "disponible",
+   "inclinacionPct": 7.3,
+   "precioUSD": 7470,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "87.0,369.3 63.5,360.8 60.5,370.3 84.0,378.8",
+   "cx": 73.7,
+   "cy": 369.8
+  },
+  {
+   "id": "C-03",
+   "manzana": "C",
+   "numero": 3,
+   "areaM2": 253,
+   "status": "disponible",
+   "inclinacionPct": 6.8,
+   "precioUSD": 7590,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "90.0,359.8 65.6,351.0 63.5,360.8 87.0,369.3",
+   "cx": 76.5,
+   "cy": 360.2
+  },
+  {
+   "id": "C-04",
+   "manzana": "C",
+   "numero": 4,
+   "areaM2": 262,
+   "status": "disponible",
+   "inclinacionPct": 6.3,
+   "precioUSD": 7860,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "93.4,350.4 68.5,341.4 65.6,351.0 90.0,359.8",
+   "cx": 79.4,
+   "cy": 350.6
+  },
+  {
+   "id": "C-05",
+   "manzana": "C",
+   "numero": 5,
+   "areaM2": 315,
+   "status": "disponible",
+   "inclinacionPct": 2.5,
+   "precioUSD": 9450,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "98.1,341.9 72.2,328.7 68.5,341.4 93.4,350.4",
+   "cx": 82.4,
+   "cy": 340.2
+  },
+  {
+   "id": "C-06",
+   "manzana": "C",
+   "numero": 6,
+   "areaM2": 388,
+   "status": "disponible",
+   "inclinacionPct": 8.6,
+   "precioUSD": 11640,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "105.3,333.6 82.5,316.1 72.2,328.7 98.1,341.9",
+   "cx": 88.8,
+   "cy": 329.6
+  },
+  {
+   "id": "C-07",
+   "manzana": "C",
+   "numero": 7,
+   "areaM2": 374,
+   "status": "disponible",
+   "inclinacionPct": 0.9,
+   "precioUSD": 11220,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada",
+    "Terreno plano"
+   ],
+   "points": "113.0,327.2 96.4,305.9 82.5,316.1 105.3,333.6",
+   "cx": 98.4,
+   "cy": 319.9
+  },
+  {
+   "id": "C-08",
+   "manzana": "C",
+   "numero": 8,
+   "areaM2": 268,
+   "status": "disponible",
+   "inclinacionPct": 0.9,
+   "precioUSD": 8040,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Terreno plano"
+   ],
+   "points": "121.0,321.2 104.4,300.0 96.4,305.9 113.0,327.2",
+   "cx": 108.7,
+   "cy": 313.6
+  },
+  {
+   "id": "C-09",
+   "manzana": "C",
+   "numero": 9,
+   "areaM2": 268,
+   "status": "disponible",
+   "inclinacionPct": 5.4,
+   "precioUSD": 8040,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "128.9,315.1 112.5,294.1 104.4,300.0 121.0,321.2",
+   "cx": 116.7,
+   "cy": 307.6
+  },
+  {
+   "id": "C-10",
+   "manzana": "C",
+   "numero": 10,
+   "areaM2": 266,
+   "status": "reservado",
+   "inclinacionPct": 6.6,
+   "precioUSD": 7980,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "136.9,309.1 120.5,288.2 112.5,294.1 128.9,315.1",
+   "cx": 124.7,
+   "cy": 301.6
+  },
+  {
+   "id": "C-11",
+   "manzana": "C",
+   "numero": 11,
+   "areaM2": 265,
+   "status": "disponible",
+   "inclinacionPct": 1.1,
+   "precioUSD": 7950,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Terreno plano"
+   ],
+   "points": "144.9,303.0 128.6,282.3 120.5,288.2 136.9,309.1",
+   "cx": 132.7,
+   "cy": 295.7
+  },
+  {
+   "id": "C-12",
+   "manzana": "C",
+   "numero": 12,
+   "areaM2": 263,
+   "status": "disponible",
+   "inclinacionPct": 0.7,
+   "precioUSD": 7890,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Terreno plano"
+   ],
+   "points": "152.9,297.0 136.7,276.4 128.6,282.3 144.9,303.0",
+   "cx": 140.7,
+   "cy": 289.7
+  },
+  {
+   "id": "C-13",
+   "manzana": "C",
+   "numero": 13,
+   "areaM2": 262,
+   "status": "reservado",
+   "inclinacionPct": 7.5,
+   "precioUSD": 7860,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "160.8,290.9 144.7,270.4 136.7,276.4 152.9,297.0",
+   "cx": 148.8,
+   "cy": 283.7
+  },
+  {
+   "id": "C-14",
+   "manzana": "C",
+   "numero": 14,
+   "areaM2": 259,
+   "status": "disponible",
+   "inclinacionPct": 8,
+   "precioUSD": 7770,
+   "ventajas": [
+    "Cerca de la cancha"
+   ],
+   "points": "168.8,284.9 153.0,264.7 144.7,270.4 160.8,290.9",
+   "cx": 156.8,
+   "cy": 277.8
+  },
+  {
+   "id": "D-01",
+   "manzana": "D",
+   "numero": 1,
+   "areaM2": 287,
+   "status": "vendido",
+   "inclinacionPct": 5.2,
+   "precioUSD": 8610,
+   "ventajas": [
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "148.5,451.9 159.3,478.9 168.8,476.1 158.1,449.4",
+   "cx": 158.7,
+   "cy": 464.1
+  },
+  {
+   "id": "D-02",
+   "manzana": "D",
+   "numero": 2,
+   "areaM2": 289,
+   "status": "vendido",
+   "inclinacionPct": 0.6,
+   "precioUSD": 8670,
+   "ventajas": [
+    "Cerca de la entrada",
+    "Terreno plano"
+   ],
+   "points": "158.1,449.4 168.8,476.1 178.7,473.9 167.9,446.9",
+   "cx": 168.4,
+   "cy": 461.6
+  },
+  {
+   "id": "D-03",
+   "manzana": "D",
+   "numero": 3,
+   "areaM2": 307,
+   "status": "disponible",
+   "inclinacionPct": 2.1,
+   "precioUSD": 9210,
+   "ventajas": [
+    "Cerca de la entrada"
+   ],
+   "points": "167.9,446.9 178.7,473.9 189.0,471.5 178.1,444.2",
+   "cx": 178.4,
+   "cy": 459.1
+  },
+  {
+   "id": "D-04",
+   "manzana": "D",
+   "numero": 4,
+   "areaM2": 290,
+   "status": "disponible",
+   "inclinacionPct": 8.9,
+   "precioUSD": 8700,
+   "ventajas": [
+    "Cerca de la entrada"
+   ],
+   "points": "178.1,444.2 189.0,471.5 198.7,469.3 187.7,441.7",
+   "cx": 188.4,
+   "cy": 456.7
+  },
+  {
+   "id": "D-05",
+   "manzana": "D",
+   "numero": 5,
+   "areaM2": 292,
+   "status": "disponible",
+   "inclinacionPct": 7.8,
+   "precioUSD": 8760,
+   "ventajas": [
+    "Cerca de la entrada"
+   ],
+   "points": "187.7,441.7 198.7,469.3 207.7,467.1 197.9,439.0",
+   "cx": 197.9,
+   "cy": 453.9
+  },
+  {
+   "id": "D-06",
+   "manzana": "D",
+   "numero": 6,
+   "areaM2": 298,
+   "status": "vendido",
+   "inclinacionPct": 2.5,
+   "precioUSD": 8940,
+   "ventajas": [
+    "Cerca de la entrada"
+   ],
+   "points": "197.9,439.0 207.7,467.1 216.9,464.3 208.0,436.2",
+   "cx": 207.5,
+   "cy": 451.5
+  },
+  {
+   "id": "D-07",
+   "manzana": "D",
+   "numero": 7,
+   "areaM2": 297,
+   "status": "disponible",
+   "inclinacionPct": 7.5,
+   "precioUSD": 8910,
+   "ventajas": [
+    "Cerca de la entrada"
+   ],
+   "points": "208.0,436.2 216.9,464.3 226.7,461.3 217.6,433.4",
+   "cx": 217.3,
+   "cy": 448.9
+  },
+  {
+   "id": "D-08",
+   "manzana": "D",
+   "numero": 8,
+   "areaM2": 323,
+   "status": "disponible",
+   "inclinacionPct": 3.3,
+   "precioUSD": 9690,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "217.6,433.4 226.7,461.3 238.2,457.8 227.2,430.4",
+   "cx": 227.6,
+   "cy": 446.2
+  },
+  {
+   "id": "D-09",
+   "manzana": "D",
+   "numero": 9,
+   "areaM2": 297,
+   "status": "vendido",
+   "inclinacionPct": 6,
+   "precioUSD": 8910,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "227.2,430.4 238.2,457.8 247.8,454.9 236.7,427.1",
+   "cx": 237.5,
+   "cy": 442.5
+  },
+  {
+   "id": "D-10",
+   "manzana": "D",
+   "numero": 10,
+   "areaM2": 317,
+   "status": "vendido",
+   "inclinacionPct": 8.4,
+   "precioUSD": 9510,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "236.7,427.1 247.8,454.9 258.4,451.5 245.8,423.5",
+   "cx": 247.3,
+   "cy": 439.5
+  },
+  {
+   "id": "D-11",
+   "manzana": "D",
+   "numero": 11,
+   "areaM2": 341,
+   "status": "vendido",
+   "inclinacionPct": 0.6,
+   "precioUSD": 10230,
+   "ventajas": [
+    "Terreno plano"
+   ],
+   "points": "245.8,423.5 258.4,451.5 269.2,446.1 255.3,419.4",
+   "cx": 257.3,
+   "cy": 435.5
+  },
+  {
+   "id": "D-12",
+   "manzana": "D",
+   "numero": 12,
+   "areaM2": 352,
+   "status": "vendido",
+   "inclinacionPct": 1.5,
+   "precioUSD": 10560,
+   "ventajas": [
+    "Terreno plano"
+   ],
+   "points": "255.3,419.4 269.2,446.1 280.4,440.6 265.3,414.7",
+   "cx": 267.7,
+   "cy": 430.4
+  },
+  {
+   "id": "D-13",
+   "manzana": "D",
+   "numero": 13,
+   "areaM2": 350,
+   "status": "reservado",
+   "inclinacionPct": 2.2,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "265.3,414.7 280.4,440.6 290.3,435.7 276.2,409.1",
+   "cx": 277.9,
+   "cy": 424.8
+  },
+  {
+   "id": "E-01",
+   "manzana": "E",
+   "numero": 1,
+   "areaM2": 300,
+   "status": "vendido",
+   "inclinacionPct": 3.4,
+   "precioUSD": 9000,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "322.7,381.9 338.8,407.2 347.2,401.8 331.1,376.5",
+   "cx": 335,
+   "cy": 391.9
+  },
+  {
+   "id": "E-02",
+   "manzana": "E",
+   "numero": 2,
+   "areaM2": 300,
+   "status": "disponible",
+   "inclinacionPct": 6.2,
+   "precioUSD": 9000,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "331.1,376.5 347.2,401.8 355.7,396.4 339.5,371.1",
+   "cx": 343.4,
+   "cy": 386.5
+  },
+  {
+   "id": "E-03",
+   "manzana": "E",
+   "numero": 3,
+   "areaM2": 300,
+   "status": "vendido",
+   "inclinacionPct": 6.2,
+   "precioUSD": 9000,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "339.5,371.1 355.7,396.4 364.1,391.0 347.9,365.7",
+   "cx": 351.8,
+   "cy": 381
+  },
+  {
+   "id": "E-04",
+   "manzana": "E",
+   "numero": 4,
+   "areaM2": 301,
+   "status": "disponible",
+   "inclinacionPct": 7,
+   "precioUSD": 9030,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "347.9,365.7 364.1,391.0 372.5,385.6 356.2,360.2",
+   "cx": 360.2,
+   "cy": 375.6
+  },
+  {
+   "id": "E-05",
+   "manzana": "E",
+   "numero": 5,
+   "areaM2": 302,
+   "status": "disponible",
+   "inclinacionPct": 7.4,
+   "precioUSD": 9060,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "356.2,360.2 372.5,385.6 380.9,380.2 364.6,354.7",
+   "cx": 368.6,
+   "cy": 370.2
+  },
+  {
+   "id": "E-06",
+   "manzana": "E",
+   "numero": 6,
+   "areaM2": 307,
+   "status": "disponible",
+   "inclinacionPct": 3.6,
+   "precioUSD": 9210,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "364.6,354.7 380.9,380.2 389.5,374.7 373.2,349.2",
+   "cx": 377.1,
+   "cy": 364.7
+  },
+  {
+   "id": "E-07",
+   "manzana": "E",
+   "numero": 7,
+   "areaM2": 312,
+   "status": "reservado",
+   "inclinacionPct": 1.9,
+   "precioUSD": 9360,
+   "ventajas": [
+    "Frente a área verde",
+    "Terreno plano"
+   ],
+   "points": "373.2,349.2 389.5,374.7 398.2,369.2 381.8,343.7",
+   "cx": 385.7,
+   "cy": 359.2
+  },
+  {
+   "id": "E-08",
+   "manzana": "E",
+   "numero": 8,
+   "areaM2": 302,
+   "status": "disponible",
+   "inclinacionPct": 7.9,
+   "precioUSD": 9060,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "381.8,343.7 398.2,369.2 406.6,363.8 390.3,338.4",
+   "cx": 394.2,
+   "cy": 353.8
+  },
+  {
+   "id": "F-01",
+   "manzana": "F",
+   "numero": 1,
+   "areaM2": 396,
+   "status": "reservado",
+   "inclinacionPct": 1.9,
+   "precioUSD": 11880,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada",
+    "Terreno plano"
+   ],
+   "points": "110.8,342.3 135.2,369.0 145.3,365.2 118.9,335.3",
+   "cx": 127.5,
+   "cy": 352.8
+  },
+  {
+   "id": "F-02",
+   "manzana": "F",
+   "numero": 2,
+   "areaM2": 406,
+   "status": "vendido",
+   "inclinacionPct": 3.6,
+   "precioUSD": 12180,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "118.9,335.3 145.3,365.2 154.3,360.2 126.9,329.2",
+   "cx": 136.4,
+   "cy": 347.5
+  },
+  {
+   "id": "F-03",
+   "manzana": "F",
+   "numero": 3,
+   "areaM2": 410,
+   "status": "disponible",
+   "inclinacionPct": 4.1,
+   "precioUSD": 12300,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "126.9,329.2 154.3,360.2 161.8,353.6 134.9,323.2",
+   "cx": 144.4,
+   "cy": 341.6
+  },
+  {
+   "id": "F-04",
+   "manzana": "F",
+   "numero": 4,
+   "areaM2": 402,
+   "status": "vendido",
+   "inclinacionPct": 1.3,
+   "precioUSD": 12060,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada",
+    "Terreno plano"
+   ],
+   "points": "134.9,323.2 161.8,353.6 169.3,347.0 142.9,317.1",
+   "cx": 152.2,
+   "cy": 335.2
+  },
+  {
+   "id": "F-05",
+   "manzana": "F",
+   "numero": 5,
+   "areaM2": 395,
+   "status": "disponible",
+   "inclinacionPct": 5.1,
+   "precioUSD": 11850,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "142.9,317.1 169.3,347.0 176.8,340.4 150.9,311.1",
+   "cx": 159.9,
+   "cy": 328.9
+  },
+  {
+   "id": "F-06",
+   "manzana": "F",
+   "numero": 6,
+   "areaM2": 388,
+   "status": "disponible",
+   "inclinacionPct": 6.7,
+   "precioUSD": 11640,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "150.9,311.1 176.8,340.4 184.3,333.8 158.9,305.0",
+   "cx": 167.7,
+   "cy": 322.6
+  },
+  {
+   "id": "F-07",
+   "manzana": "F",
+   "numero": 7,
+   "areaM2": 380,
+   "status": "disponible",
+   "inclinacionPct": 8.1,
+   "precioUSD": 11400,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "158.9,305.0 184.3,333.8 191.8,327.1 166.8,298.9",
+   "cx": 175.4,
+   "cy": 316.2
+  },
+  {
+   "id": "G-01",
+   "manzana": "G",
+   "numero": 1,
+   "areaM2": 350,
+   "status": "disponible",
+   "inclinacionPct": 3.3,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "198.8,274.7 221.7,300.7 214.2,307.3 190.8,280.8",
+   "cx": 206.4,
+   "cy": 290.9
+  },
+  {
+   "id": "G-02",
+   "manzana": "G",
+   "numero": 2,
+   "areaM2": 342,
+   "status": "disponible",
+   "inclinacionPct": 4.6,
+   "precioUSD": 10260,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "206.8,268.7 229.2,294.1 221.7,300.7 198.8,274.7",
+   "cx": 214.1,
+   "cy": 284.6
+  },
+  {
+   "id": "H-01",
+   "manzana": "H",
+   "numero": 1,
+   "areaM2": 336,
+   "status": "disponible",
+   "inclinacionPct": 6.8,
+   "precioUSD": 10080,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "124.7,409.6 111.7,378.5 102.4,382.1 115.3,412.9",
+   "cx": 113.5,
+   "cy": 395.8
+  },
+  {
+   "id": "H-02",
+   "manzana": "H",
+   "numero": 2,
+   "areaM2": 341,
+   "status": "disponible",
+   "inclinacionPct": 1.4,
+   "precioUSD": 10230,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada",
+    "Terreno plano"
+   ],
+   "points": "134.1,406.2 120.8,374.4 111.7,378.5 124.7,409.6",
+   "cx": 122.9,
+   "cy": 392.1
+  },
+  {
+   "id": "H-03",
+   "manzana": "H",
+   "numero": 3,
+   "areaM2": 344,
+   "status": "disponible",
+   "inclinacionPct": 7.1,
+   "precioUSD": 10320,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "143.5,402.8 130.2,370.9 120.8,374.4 134.1,406.2",
+   "cx": 132.2,
+   "cy": 388.5
+  },
+  {
+   "id": "H-04",
+   "manzana": "H",
+   "numero": 4,
+   "areaM2": 348,
+   "status": "disponible",
+   "inclinacionPct": 5.4,
+   "precioUSD": 10440,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "153.0,399.4 139.5,367.3 130.2,370.9 143.5,402.8",
+   "cx": 141.5,
+   "cy": 385.1
+  },
+  {
+   "id": "H-05",
+   "manzana": "H",
+   "numero": 5,
+   "areaM2": 339,
+   "status": "reservado",
+   "inclinacionPct": 3.4,
+   "precioUSD": 10170,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "163.2,395.8 147.6,364.3 139.5,367.3 153.0,399.4",
+   "cx": 151.1,
+   "cy": 382.3
+  },
+  {
+   "id": "H-06",
+   "manzana": "H",
+   "numero": 6,
+   "areaM2": 379,
+   "status": "reservado",
+   "inclinacionPct": 4.8,
+   "precioUSD": 11370,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "175.0,388.5 154.3,360.2 147.6,364.3 163.2,395.8",
+   "cx": 160.9,
+   "cy": 378.6
+  },
+  {
+   "id": "H-07",
+   "manzana": "H",
+   "numero": 7,
+   "areaM2": 404,
+   "status": "disponible",
+   "inclinacionPct": 7.7,
+   "precioUSD": 12120,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "184.9,379.8 161.8,353.6 154.3,360.2 175.0,388.5",
+   "cx": 169.5,
+   "cy": 371.2
+  },
+  {
+   "id": "H-08",
+   "manzana": "H",
+   "numero": 8,
+   "areaM2": 350,
+   "status": "disponible",
+   "inclinacionPct": 6.1,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado",
+    "Cerca de la entrada"
+   ],
+   "points": "192.4,373.2 169.3,347.0 161.8,353.6 184.9,379.8",
+   "cx": 177.1,
+   "cy": 363.4
+  },
+  {
+   "id": "H-09",
+   "manzana": "H",
+   "numero": 9,
+   "areaM2": 350,
+   "status": "reservado",
+   "inclinacionPct": 6.1,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "199.9,366.6 176.8,340.4 169.3,347.0 192.4,373.2",
+   "cx": 184.6,
+   "cy": 356.8
+  },
+  {
+   "id": "H-10",
+   "manzana": "H",
+   "numero": 10,
+   "areaM2": 350,
+   "status": "vendido",
+   "inclinacionPct": 6.8,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "207.4,360.0 184.3,333.8 176.8,340.4 199.9,366.6",
+   "cx": 192.1,
+   "cy": 350.2
+  },
+  {
+   "id": "H-11",
+   "manzana": "H",
+   "numero": 11,
+   "areaM2": 350,
+   "status": "disponible",
+   "inclinacionPct": 5.8,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Cerca de la cancha",
+    "Cerca del mercado"
+   ],
+   "points": "214.9,353.4 191.8,327.1 184.3,333.8 207.4,360.0",
+   "cx": 199.6,
+   "cy": 343.6
+  },
+  {
+   "id": "I-01",
+   "manzana": "I",
+   "numero": 1,
+   "areaM2": 350,
+   "status": "disponible",
+   "inclinacionPct": 2.6,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "244.9,327.0 221.7,300.7 214.2,307.3 237.4,333.5",
+   "cx": 229.6,
+   "cy": 317.1
+  },
+  {
+   "id": "I-02",
+   "manzana": "I",
+   "numero": 2,
+   "areaM2": 351,
+   "status": "vendido",
+   "inclinacionPct": 4.1,
+   "precioUSD": 10530,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "252.4,320.3 229.2,294.1 221.7,300.7 244.9,327.0",
+   "cx": 237.1,
+   "cy": 310.5
+  },
+  {
+   "id": "I-03",
+   "manzana": "I",
+   "numero": 3,
+   "areaM2": 350,
+   "status": "disponible",
+   "inclinacionPct": 7.9,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "259.8,313.6 236.7,287.4 229.2,294.1 252.4,320.3",
+   "cx": 244.6,
+   "cy": 303.9
+  },
+  {
+   "id": "J-01",
+   "manzana": "J",
+   "numero": 1,
+   "areaM2": 268,
+   "status": "vendido",
+   "inclinacionPct": 8.7,
+   "precioUSD": 8040,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "221.4,361.0 238.5,383.3 229.7,388.3 214.1,367.5",
+   "cx": 226,
+   "cy": 375
+  },
+  {
+   "id": "J-02",
+   "manzana": "J",
+   "numero": 2,
+   "areaM2": 292,
+   "status": "disponible",
+   "inclinacionPct": 1.6,
+   "precioUSD": 8760,
+   "ventajas": [
+    "Terreno plano"
+   ],
+   "points": "229.0,354.3 247.3,378.4 238.5,383.3 221.4,361.0",
+   "cx": 234.1,
+   "cy": 369.2
+  },
+  {
+   "id": "J-03",
+   "manzana": "J",
+   "numero": 3,
+   "areaM2": 313,
+   "status": "disponible",
+   "inclinacionPct": 7.8,
+   "precioUSD": 9390,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "236.5,347.7 256.1,373.4 247.3,378.4 229.0,354.3",
+   "cx": 242.2,
+   "cy": 363.4
+  },
+  {
+   "id": "J-04",
+   "manzana": "J",
+   "numero": 4,
+   "areaM2": 327,
+   "status": "reservado",
+   "inclinacionPct": 7.6,
+   "precioUSD": 9810,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "244.0,341.1 264.0,367.4 256.1,373.4 236.5,347.7",
+   "cx": 250.2,
+   "cy": 357.4
+  },
+  {
+   "id": "J-05",
+   "manzana": "J",
+   "numero": 5,
+   "areaM2": 338,
+   "status": "disponible",
+   "inclinacionPct": 5.5,
+   "precioUSD": 10140,
+   "ventajas": [
+    "Buena ubicación"
+   ],
+   "points": "251.5,334.5 272.5,361.9 264.0,367.4 244.0,341.1",
+   "cx": 258,
+   "cy": 351.2
+  },
+  {
+   "id": "J-06",
+   "manzana": "J",
+   "numero": 6,
+   "areaM2": 350,
+   "status": "disponible",
+   "inclinacionPct": 3.4,
+   "precioUSD": 10500,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "259.0,327.9 280.7,356.4 272.5,361.9 251.5,334.5",
+   "cx": 266,
+   "cy": 345.1
+  },
+  {
+   "id": "J-07",
+   "manzana": "J",
+   "numero": 7,
+   "areaM2": 368,
+   "status": "vendido",
+   "inclinacionPct": 4.9,
+   "precioUSD": 11040,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "266.5,321.1 289.0,350.6 280.7,356.4 259.0,327.9",
+   "cx": 273.8,
+   "cy": 339
+  },
+  {
+   "id": "J-08",
+   "manzana": "J",
+   "numero": 8,
+   "areaM2": 377,
+   "status": "disponible",
+   "inclinacionPct": 8.3,
+   "precioUSD": 11310,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "273.9,314.3 297.1,344.7 289.0,350.6 266.5,321.1",
+   "cx": 281.6,
+   "cy": 332.7
+  },
+  {
+   "id": "J-09",
+   "manzana": "J",
+   "numero": 9,
+   "areaM2": 386,
+   "status": "reservado",
+   "inclinacionPct": 5.4,
+   "precioUSD": 11580,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "281.3,307.6 305.0,338.6 297.1,344.7 273.9,314.3",
+   "cx": 289.3,
+   "cy": 326.3
+  },
+  {
+   "id": "J-10",
+   "manzana": "J",
+   "numero": 10,
+   "areaM2": 393,
+   "status": "disponible",
+   "inclinacionPct": 0.2,
+   "precioUSD": 11790,
+   "ventajas": [
+    "Frente a área verde",
+    "Terreno plano"
+   ],
+   "points": "288.8,300.8 312.8,332.3 305.0,338.6 281.3,307.6",
+   "cx": 297,
+   "cy": 319.8
+  },
+  {
+   "id": "J-11",
+   "manzana": "J",
+   "numero": 11,
+   "areaM2": 398,
+   "status": "disponible",
+   "inclinacionPct": 7.9,
+   "precioUSD": 11940,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "296.2,294.1 320.5,326.0 312.8,332.3 288.8,300.8",
+   "cx": 304.6,
+   "cy": 313.3
+  },
+  {
+   "id": "J-12",
+   "manzana": "J",
+   "numero": 12,
+   "areaM2": 403,
+   "status": "disponible",
+   "inclinacionPct": 2.2,
+   "precioUSD": 12090,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "303.6,287.4 328.3,319.6 320.5,326.0 296.2,294.1",
+   "cx": 312.2,
+   "cy": 306.8
+  },
+  {
+   "id": "J-13",
+   "manzana": "J",
+   "numero": 13,
+   "areaM2": 409,
+   "status": "disponible",
+   "inclinacionPct": 7.9,
+   "precioUSD": 12270,
+   "ventajas": [
+    "Frente a área verde"
+   ],
+   "points": "311.1,280.6 336.1,313.4 328.3,319.6 303.6,287.4",
+   "cx": 319.8,
+   "cy": 300.2
+  },
+  {
+   "id": "J-14",
+   "manzana": "J",
+   "numero": 14,
+   "areaM2": 416,
+   "status": "reservado",
+   "inclinacionPct": 0.8,
+   "precioUSD": 12480,
+   "ventajas": [
+    "Frente a área verde",
+    "Terreno plano"
+   ],
+   "points": "318.5,273.9 344.0,307.3 336.1,313.4 311.1,280.6",
+   "cx": 327.4,
+   "cy": 293.8
+  }
+ ]
+}

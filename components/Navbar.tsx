@@ -61,6 +61,15 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/loteamiento"
+                className={`text-lg font-semibold transition-colors hover:text-accent
+                  ${isScrolled ? 'text-foreground' : 'text-white'}`}
+              >
+                Mapa de lotes
+              </Link>
+            </li>
           </ul>
           {whatsappContact && (
             <SocialIcon
@@ -103,6 +112,15 @@ export default function Navbar() {
               </Link>
             </li>
           ))}
+          <li>
+            <Link
+              href="/loteamiento"
+              onClick={() => setIsMenuOpen(false)}
+              className="block text-lg font-semibold text-foreground transition-colors hover:text-accent"
+            >
+              Mapa de lotes
+            </Link>
+          </li>
         </ul>
         {whatsappContact && (
           <SocialIcon
